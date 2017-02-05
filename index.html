@@ -1,4 +1,4 @@
-
+	
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -165,7 +165,7 @@ $(document).ready(function() {
 			<div class="container">
 				<div class="nav-header">
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-					<h1 id="fh5co-logo"><a href="index.html">भव्य Productions & Event </img></a></h1>
+					<h1 id="fh5co-logo"><a href="index.html"><img src = "logo2.png"/></a></h1>
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
@@ -174,7 +174,7 @@ $(document).ready(function() {
 							<li><a id="serv">Services</a></li>
 							<li><a id="tem">Team</a></li>
 							<li><a id="abt">About</a></li>
-							<li><a id="insp">Inspiration</a></li>
+							<!-- <li><a id="insp">Inspiration</a></li> -->
 							<li><a id="blo">Blog</a></li>
 							<li><a id="con">Contact</a></li>
 						</ul>
@@ -316,8 +316,8 @@ function showSlides() {
 							<li class="two-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/cover_bg_2.jpg); ">
 								 <a  class="color-3"> 
 									<div class="case-studies-summary">
-										<span>Creative</span>
-										<h2>Wak in the wooden street</h2>
+										<span></span>
+										<h2>Meet and Meet again</h2>
 									</div>
 								 </a> 
 							</li>
@@ -325,8 +325,8 @@ function showSlides() {
 							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/cover_bg_3.jpg); ">
 								<a  class="color-4">
 									<div class="case-studies-summary">
-										<span>Design</span>
-										<h2>Present your product</h2>
+										<span>Quick Stabs</span>
+										<h2>Wobble bases, Vigour and Vogue</h2>
 									</div>
 								</a>
 							</li>
@@ -334,7 +334,7 @@ function showSlides() {
 							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/cover_bg_1.jpg); "> 
 								<a class="color-5">
 									<div class="case-studies-summary">
-										<span>Photo</span>
+										<span>Zeal</span>
 										<h2>See the horizon</h2>
 									</div>
 								</a>
@@ -372,7 +372,7 @@ function showSlides() {
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3>भव्य Services</h3>
+						<h3>Services</h3>
 						<p>The social culture has paved way for many social occasions. While, MNCs host corporate events to hold their social status high.  For accomplishing these events successfully, you need skillful event managers of भव्य Productions and Event Management.</p>
 					</div>
 				</div>
@@ -467,7 +467,7 @@ function showSlides() {
 					<div class="col-md-3">
 						<div class="fh5co-team text-center animate-box"> 
 							<figure>
-								<img src="images/person_1.jpg" alt="user">
+								<img src="images/tapan.jpg" alt="user">
 							</figure>
 							<p>Tapan Parashar<br> <span class="text-mute">Management Head</span></p>
 							<blockquote>
@@ -490,7 +490,7 @@ function showSlides() {
 					<div class="col-md-3">
 						<div class="fh5co-team text-center animate-box">
 							<figure>
-								<img src="images/person_2.jpg" alt="user">
+								<img src="images/tushar.jpg" alt="user">
 							</figure>
 							<p>Tushar Bhatore<br> <span class="text-mute">Production Head</span></p>
 							<blockquote>
@@ -504,7 +504,7 @@ function showSlides() {
 					<div class="col-md-3">
 						<div class="fh5co-team text-center animate-box">
 							<figure>
-								<img src="images/person_3.jpg" alt="user">
+								<img src="images/shishir.jpg" alt="user">
 							</figure>
 							<p>Shishir Trivedi <br> <span class="text-mute">Client Representative</span></p>
 							<blockquote>
@@ -516,7 +516,7 @@ function showSlides() {
 						<div class="col-md-3">
 						<div class="fh5co-team text-center animate-box">
 							<figure>
-								<img src="images/person_3.jpg" alt="user">
+								<img src="images/supriya.jpg" alt="user">
 							</figure>
 							<p> Supriya Dubey <br> <span class="text-mute">Creative Head </span></p>
 							<blockquote>
@@ -882,8 +882,11 @@ var btn4 = document.getElementById("myBtn4");
 var btn5 = document.getElementById("myBtn5");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
+var span1 = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close")[1];
+var span3 = document.getElementsByClassName("close")[2];
+var span4 = document.getElementsByClassName("close")[3];
+var span5 = document.getElementsByClassName("close")[4];
 // When the user clicks the button, open the modal 
 btn1.onclick = function() {
     modal1.style.display = "block";
@@ -900,16 +903,45 @@ btn4.onclick = function() {
 btn5.onclick = function() {
     modal5.style.display = "block";
 }
+
+span1.onclick = function() {
+    modal1.style.display = "none";
+}
+span2.onclick = function() {
+    modal2.style.display = "none";
+}
+span3.onclick = function() {
+    modal3.style.display = "none";
+}
+span4.onclick = function() {
+    modal4.style.display = "none";
+}
+span5.onclick = function() {
+    modal5.style.display = "none";
+}
+
 // When the user clicks on <span> (x), close the modal
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal1) {
-        modal1.style.display = "none";
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
 }
 </script>
-
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/58978dd18bfe600a6b4be4a3/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 </html>
 
