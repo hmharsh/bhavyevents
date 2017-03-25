@@ -261,7 +261,7 @@ $(document).ready(function() {
    </div> -->
  <div class='container'>
 
-<div class="ism-slider" data-transition_type="fade" data-radios="false" id="bhavyevents">
+<!-- <div class="ism-slider" data-transition_type="fade" data-radios="false" id="bhavyevents">
   <ol>
     <li>
       <img src="images/a.jpg">
@@ -276,7 +276,27 @@ $(document).ready(function() {
       <img src="images/d.jpg">
     </li>
   </ol>
+</div> -->
+
+
+
+
+<div class="ism-slider" data-play_type="loop" data-interval="3000" data-image_fx="zoompan" data-buttons="false" data-radios="false" id="bhavy">
+   <ol>
+    <li>
+      <img src="images/a.jpg">
+    </li>
+    <li>
+      <img src="images/b.jpg">
+    </li>
+    <li>
+      <img src="images/c.jpg">
+    </li>
+   
+  </ol>
 </div>
+
+
 </section></div>
 
 
@@ -453,9 +473,24 @@ $(document).ready(function() {
 			</div>
 		
 			<div class="container">
+
+
 					<div class="row text-center">
-					
-					<div class="col-md-3">
+									<div class="col-md-4">
+						<div class="fh5co-team text-center animate-box">
+							<figure>
+								<img src="images/shishir.jpg" alt="user">
+							</figure>
+							<p>Shishir Trivedi <br> <span class="text-mute">Client Services</span></p>
+							<blockquote>
+								<p>Shishir has a diverse background in marketing, communications, information technology,  and event management.With over two years of experience </br>Shishir uses all his experience and learned skills to ensure that every event is least flawed and that every client is satisfied to his core.  </br></p>
+							</blockquote>
+							
+						</div>
+					</div>
+
+
+					<div class="col-md-4">
 						<div class="fh5co-team text-center animate-box"> 
 							<figure>
 								<img src="images/tapan.jpg" alt="user">
@@ -478,7 +513,7 @@ $(document).ready(function() {
 
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-4">
 						<div class="fh5co-team text-center animate-box">
 							<figure>
 								<img src="images/tushar.jpg" alt="user">
@@ -492,32 +527,8 @@ $(document).ready(function() {
 							
 						</div>
 					</div>
-					<div class="col-md-3">
-						<div class="fh5co-team text-center animate-box">
-							<figure>
-								<img src="images/shishir.jpg" alt="user">
-							</figure>
-							<p>Shishir Trivedi <br> <span class="text-mute">Client Services</span></p>
-							<blockquote>
-								<p>Shishir has a diverse background in marketing, communications, information technology,  and event management.With over two years of experience </br>Shishir uses all his experience and learned skills to ensure that every event is least flawed and that every client is satisfied to his core.  </br></p>
-							</blockquote>
-							
-						</div>
-					</div>
-						<div class="col-md-3">
-						<div class="fh5co-team text-center animate-box">
-							<figure>
-								<img src="images/supriya.jpg" alt="user">
-							</figure>
-							<p> Supriya Dubey <br> <span class="text-mute">Creative Head </span></p>
-							<blockquote>
-								<p>Supriya brings about creative solutions and marketing expertise to any project she works on.She makes sure that with her prolific ideas, every event is on par with the </br>
-								Supriya is determined to make every event joyous and full of content to the clients by understanding their needs and sentiments.
-							</p>
-							</blockquote>
-							
-						</div>
-					</div>
+	
+		
 				</div>
 			</div>
 		</div>
@@ -821,7 +832,7 @@ $(document).ready(function() {
     <div class="modal-body">
 		<p>1. Birthday Parties </p> 
 		<p>2. Anniversary Celebration   </p> 
-		<p>3. . Baby Shower </p>  
+		<p>3.  Baby Shower </p>  
 		<p>4. Naming Ceremonies  </p> 
 		<p>5. Success Parties </p>  
 		<p>6. Kitty Parties </p> 
@@ -883,21 +894,48 @@ var span2 = document.getElementsByClassName("close")[1];
 var span3 = document.getElementsByClassName("close")[2];
 var span4 = document.getElementsByClassName("close")[3];
 var span5 = document.getElementsByClassName("close")[4];
+
 // When the user clicks the button, open the modal 
+/*var bb = document.getElementById("myModal1");*/
+/*document.onclick = function() {
+	
+	
+
+if(window.val===1){
+
+
+      modal1.style.display = "none";
+      modal2.style.display = "none";
+      modal3.style.display = "none";
+      modal4.style.display = "none";
+      modal5.style.display = "none";
+
+
+   //  modal.style.display = "none";
+     //window.val=0;
+ }
+}*/
+
 btn1.onclick = function() {
     modal1.style.display = "block";
+    window.val=1;
+   // alert("hi"+window.val);
 }
 btn2.onclick = function() {
     modal2.style.display = "block";
+    window.val=1;
 }
 btn3.onclick = function() {
     modal3.style.display = "block";
+    window.val=1;
 }
 btn4.onclick = function() {
     modal4.style.display = "block";
+    window.val=1;
 }
 btn5.onclick = function() {
     modal5.style.display = "block";
+    window.val=1;
 }
 
 span1.onclick = function() {
