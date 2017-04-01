@@ -895,6 +895,32 @@ var span3 = document.getElementsByClassName("close")[2];
 var span4 = document.getElementsByClassName("close")[3];
 var span5 = document.getElementsByClassName("close")[4];
 
+
+$(".modal").click(function(){
+	/* modal1.style.display = "none";*/
+	$(".modal").hide();
+	 $("#fh5co-header-section").show();
+
+	
+
+	});
+
+
+/*
+$(document).ready(function() {
+    $("#mai").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#fh5co-header-section").offset().top
+        
+        scrollTop: $("#fh5co-feature-product").offset().top
+    }, 1000);
+});
+});
+*/
+
+
+
+
 // When the user clicks the button, open the modal 
 /*var bb = document.getElementById("myModal1");*/
 /*document.onclick = function() {
@@ -918,40 +944,50 @@ if(window.val===1){
 
 btn1.onclick = function() {
     modal1.style.display = "block";
+    $("#fh5co-header-section").hide();
     window.val=1;
    // alert("hi"+window.val);
 }
 btn2.onclick = function() {
     modal2.style.display = "block";
+     $("#fh5co-header-section").hide();
     window.val=1;
 }
 btn3.onclick = function() {
     modal3.style.display = "block";
+     $("#fh5co-header-section").hide();
     window.val=1;
 }
 btn4.onclick = function() {
     modal4.style.display = "block";
+     $("#fh5co-header-section").hide();
     window.val=1;
 }
 btn5.onclick = function() {
     modal5.style.display = "block";
+     $("#fh5co-header-section").hide();
     window.val=1;
 }
 
 span1.onclick = function() {
     modal1.style.display = "none";
+     $("#fh5co-header-section").hide();
 }
 span2.onclick = function() {
     modal2.style.display = "none";
+     $("#fh5co-header-section").hide();
 }
 span3.onclick = function() {
     modal3.style.display = "none";
+     $("#fh5co-header-section").hide();
 }
 span4.onclick = function() {
     modal4.style.display = "none";
+     $("#fh5co-header-section").hide();
 }
 span5.onclick = function() {
     modal5.style.display = "none";
+     $("#fh5co-header-section").hide();
 }
 
 // When the user clicks on <span> (x), close the modal
