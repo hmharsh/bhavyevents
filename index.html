@@ -32,45 +32,11 @@ body { background-color: #fff; color: #000; padding: 0; margin: 0; }
 
 
     <style>
-       /*  body {font: normal 0.9em Arial;color:#222;}
-       header {display:block; font-size:1.2em;margin-bottom:100px;}
-       header a, header span {
-           display: inline-block;
-           padding: 4px 8px;
-           margin-right: 10px;
-           border: 2px solid #000;
-           background: #DDD;
-           color: #000;
-           text-decoration: none;
-           text-align: center;
-           height: 20px;
-       }
-       header span {background:white;}
-       a {color: #1155CC;} */
        nav ul li a{
        	  cursor: pointer;
        }
     </style>
-
-
-
-  	<!-- Facebook and Twitter integration -->
-<!-- 	<meta property="og:title" content=""/>
-<meta property="og:image" content=""/>
-<meta property="og:url" content=""/>
-<meta property="og:site_name" content=""/>
-<meta property="og:description" content=""/>
-<meta name="twitter:title" content="" />
-<meta name="twitter:image" content="" />
-<meta name="twitter:url" content="" />
-<meta name="twitter:card" content="" /> -->
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.png">
-
-	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'> -->
-	
-	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="jquery.funnyText.css" />
 
@@ -99,7 +65,13 @@ body { background-color: #fff; color: #000; padding: 0; margin: 0; }
 	
 
 <script>
+$(window).load(function(){
+    $('#cover').fadeOut(1000);    
+});
+
+
 $(document).ready(function() {
+	$("#moreinfo").hide();
     $("#main").click(function() {
     $('html, body').animate({
         /*scrollTop: $("#fh5co-header-section").offset().top*/
@@ -177,6 +149,7 @@ $(document).ready(function() {
 	<body>
 		<div id="fh5co-wrapper">
 		<div id="fh5co-page">
+			<div id="cover"></div>
 	
 		<div class="fh5co-hero">
 			<div class="fh5co-overlay"></div>
@@ -261,22 +234,6 @@ $(document).ready(function() {
    </div> -->
  <div class='container'>
 
-<!-- <div class="ism-slider" data-transition_type="fade" data-radios="false" id="bhavyevents">
-  <ol>
-    <li>
-      <img src="images/a.jpg">
-    </li>
-    <li>
-      <img src="images/b.jpg">
-    </li>
-    <li>
-      <img src="images/c.jpg">
-    </li>
-    <li>
-      <img src="images/d.jpg">
-    </li>
-  </ol>
-</div> -->
 
 
 
@@ -362,11 +319,7 @@ $(document).ready(function() {
 					</div>
 				</div>
 
-<!-- 				<div class="row">
-	<div class="col-md-4 col-md-offset-4 text-center animate-box">
-		<a href="#" class="btn btn-primary btn-lg">See Gallery</a>
-	</div>
-</div> -->
+
 
 				
 			</div>
@@ -394,12 +347,9 @@ $(document).ready(function() {
 					<div class="col-md-4 col-sm-4">
 						<div class="service animate-box">
 							<span><i class="icon-briefcase"></i></span>
-							
-							<!-- Trigger/Open   -->
-							
 							<h3>Corporate Events</h3>
 							<p>It is a gathering that is sponsored by a business for its employees, business partners, clients and /or prospective clients. </br>
-							<U id="myBtn1" style = "cursor: pointer;">More Info.</U>    
+							<U id="myBtn1" style = "cursor: pointer;"><a href = "#moreinfo"> More Info.</a></U>    
 							
 							</p>
 						</div>
@@ -410,7 +360,7 @@ $(document).ready(function() {
 						
 							<h3>Special Events </h3>
 							<p>Only few understand the beauty of moments. We, at bhavy Productions and Management, believe in turning every reason to be happy into a grand fiesta.</br>
-<U id="myBtn2" style = "cursor: pointer;">More Info.</U> 
+<U id="myBtn2" style = "cursor: pointer;"><a href = "#moreinfo"> More Info.</a></U> 
 							</p>
 						</div>
 					</div>
@@ -420,7 +370,7 @@ $(document).ready(function() {
 							<h3>Entertainment</h3>
 							<p>Events that hold the attention and interest of an audience or gives pleasure and delight.
 							 </br>
-							<U id="myBtn3" style = "cursor: pointer;">More Info.</U>    
+							<U id="myBtn3" style = "cursor: pointer;"><a href = "#moreinfo"> More Info.</a></U>    
 							 </p>
 						</div>
 					</div>
@@ -439,7 +389,7 @@ $(document).ready(function() {
 							<h3>Cultural Events</h3>
 						<p>The social culture has paved way for many social occasions. While, MNCs host corporate events to hold their social status high.  For accomplishing these events successfully, you need skillful event managers of भव्य Productions and Event Management.
  </br>
-							<U id="myBtn4" style = "cursor: pointer;">More Info.</U>    
+							<U id="myBtn4" style = "cursor: pointer;"><a href = "#moreinfo"> More Info.</a></U>    
 						</p>
 						</div>
 					</div>
@@ -449,7 +399,9 @@ $(document).ready(function() {
 							<h3>Wedding</h3>
 							<p>Wedding is one of the most important event in not only the lives of the marrying couple but also their families.At भव्य make sure to make it most beautiful by our creative and novel ideas especially for the new age couples who are low on time and unskilled to plan the most important days of their lives.
 							 </br>
-							<U id="myBtn5" style = "cursor: pointer;">More Info.</U>    
+							 <!-- <U id="myBtn5" style = "cursor: pointer;">More Info.</U> --> 
+							 <U id="myBtn5" style = "cursor: pointer;"><a href = "#moreinfo"> More Info.</a></U>
+
 							</p>
 						</div>
 					</div>
@@ -457,6 +409,118 @@ $(document).ready(function() {
 			</div>
 		</div>
 
+
+
+<div id = "moreinfo">
+	<!-- Div for wedding -->
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+					<div align = "center" class="cls5 service animate-box">
+							<span><i class="icon-heart"></i></span>
+							<h3>Wedding Events</h3>
+							<p>
+								<p>1. Wedding Planning </p> 
+								<p>2. Themed Weddings   </p> 
+								<p>3. Sangeet Functions </p>  
+								<p>4. Destination Wedding  </p> 
+								<p>5. Pre-Wedding Functions </p>  
+								<p>6. Hospitality  </p> 
+								<p>7. Reception Parties  </p> 
+								<p>8. Engagement Ceremonies </p> 
+							 
+							</p>
+					</div>
+
+					<!-- div for Corporate events -->
+						<div align = "center" class="cls1 service animate-box">
+							<span><i class="icon-briefcase"></i></span>
+							<h3>Corporate Events</h3>
+							<p>
+								<p>1. Exhibitions</p> 
+								<p>2. Conclaves  </p> 
+								<p>3. Corporate Workshops</p>  
+								<p>4. Conferences </p> 
+								<p>5. Training Programs</p>  
+								<p>6. Inaugurations </p> 
+								<p>7. Brand Promotions </p> 
+								<p>8. Award Functions </p> 
+								<p>9. Annual Day Celebration</p>  
+								<p>10. Job Fair </p> 
+								<p>11. Product Launching</p>   
+								<p>12. Product Promotion </p> 
+							
+							</p>
+						</div>
+					<!-- For Special Services -->
+					<div align = "center"  class="cls2 service animate-box">
+							<span><i class="icon-star"></i></span>
+     						 <h2>Special Events</h2>
+							<p>
+								<p>	1. Celebrity Shows</p> 
+								<p>	2. Stage Shows </p>
+								<p>	3. Musical Concerts </p>
+								<p>	4. Sports Events </p>
+								<p>	5. DJ Nights </p>
+								<p>	6. Cocktail Parties</p> 
+								<p>	7. Theme Parties </p>
+								<p>	8. Fashion Shows </p>
+								<p>	9. EDM </p>
+								<p> 10. Award Ceremonies</p>
+								<p> 11. Competitions </p>
+							 </p>
+							
+					 </div>
+
+
+<!-- for Entartainment Events-->
+
+				  	<div align = "center"  class="cls3 service animate-box">
+							<span><i class="icon-smile"></i></span>
+    							  <h2>Entertainment Events</h2>
+							<p>
+								<p>1. Traditional Fairs </p> 
+								<p>2. Carnivals  </p> 
+								<p>3. Food carnivals</p>  
+								<p>4. House Warming  </p> 
+								<p>5. Garba Events </p>  
+								<p>6. Handloom Fairs  </p> 
+								<p>7. Handicraft Fairs  </p> 
+								<p>8. College Fests </p> 
+								<p>9. Annual Functions </p>  
+							 </p>
+							
+					 </div>
+					 <!-- for Cultural  Events-->
+
+				  	<div align = "center" class="cls4 service animate-box">
+							<span><i class="icon-globe"></i></span>
+    					  <h2>Cultural Events</h2>
+							<p>
+								<p>1. Birthday Parties </p> 
+								<p>2. Anniversary Celebration   </p> 
+								<p>3.  Baby Shower </p>  
+								<p>4. Naming Ceremonies  </p> 
+								<p>5. Success Parties </p>  
+								<p>6. Kitty Parties </p> 
+								<p>7. Society Activities  </p> 
+								<p>8. Road Shows  </p> 
+								<p>9. Kavi Sammelan </p>  
+							 
+							</p>
+					 </div>
+
+
+
+
+   
+
+
+
+<!-- <U id="hideallinfo" style = "cursor: pointer;"><h4 align = "center">Less Info</h4></U> -->
+<h4 id="hideallinfo" style = "cursor: pointer;" align = "center">Less Info</h4>
+</div>
 		<!-- END What we do -->
 
 		<div id="fh5co-content-section" class="fh5co-section-gray">
@@ -466,7 +530,7 @@ $(document).ready(function() {
 						<h3>Our Team</h3>
 						<p>The Co founders are four people from diverse background, each having an elaborate experience in event management and productions,  who have come together to bring out and deliver the best for client satisfaction. 
 							 </br>
-							<U id="myBtn5" style = "cursor: pointer;">More Info.</U>    
+							
 						</p>
 					</div>
 				</div>
@@ -662,6 +726,17 @@ $(document).ready(function() {
 <head>
 <style>
 /*   (background) */
+
+
+#cover {
+    background: url("http://www.aveva.com/Images/ajax-loader.gif") no-repeat scroll center center #FFF;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+
 .modal{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -875,7 +950,17 @@ $(document).ready(function() {
 </div>
 
 <script>
-// Get the modal
+
+function hideall(){
+	for(let i = 1; i < 6; i++) {
+		 $('.cls'+i).hide()
+	}
+};
+
+
+
+
+/*// Get the modal
 var modal1 = document.getElementById('myModal1');
 var modal2 = document.getElementById('myModal2');
 var modal3 = document.getElementById('myModal3');
@@ -895,55 +980,50 @@ var span2 = document.getElementsByClassName("close")[1];
 var span3 = document.getElementsByClassName("close")[2];
 var span4 = document.getElementsByClassName("close")[3];
 var span5 = document.getElementsByClassName("close")[4];
-
-
+*/
+/*
 $(".modal").click(function(){
-	/* modal1.style.display = "none";*/
+
 	$(".modal").hide();
 	 $("#fh5co-header-section").show();
 
 	
 
 	});
-
-
-/*
-$(document).ready(function() {
-    $("#mai").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#fh5co-header-section").offset().top
-        
-        scrollTop: $("#fh5co-feature-product").offset().top
-    }, 1000);
-});
-});
 */
 
-
-
-
-// When the user clicks the button, open the modal 
-/*var bb = document.getElementById("myModal1");*/
-/*document.onclick = function() {
-	
-	
-
-if(window.val===1){
-
-
-      modal1.style.display = "none";
-      modal2.style.display = "none";
-      modal3.style.display = "none";
-      modal4.style.display = "none";
-      modal5.style.display = "none";
-
-
-   //  modal.style.display = "none";
-     //window.val=0;
- }
+/*for(var o = 1 ;o<6;o++){
+	var s ="btn"+o;
+	var m = "modal"+o;
+	s.onclick = function() {
+    m.style.display = "block";
+    $("#fh5co-header-section").hide();
+    window.val=1;
+   // alert("hi"+window.val);
+}
 }*/
 
-btn1.onclick = function() {
+
+ for(let i = 1; i < 6; i++) {
+  $('#myBtn' + i).click( function(){
+  	 hideall();
+  	$('#moreinfo').show();
+   $('#hideallinfo').show();
+    $('.cls'+i).show();
+
+
+
+
+
+  });
+  }
+ $('#hideallinfo').click( function(){
+ 	hideall();
+    $('#hideallinfo').hide();
+    $('#moreinfo').hide();
+  });
+
+/*btn1.onclick = function() {
     modal1.style.display = "block";
     $("#fh5co-header-section").hide();
     window.val=1;
@@ -968,9 +1048,9 @@ btn5.onclick = function() {
     modal5.style.display = "block";
      $("#fh5co-header-section").hide();
     window.val=1;
-}
+}*/
 
-span1.onclick = function() {
+/*span1.onclick = function() {
     modal1.style.display = "none";
      $("#fh5co-header-section").hide();
 }
@@ -990,15 +1070,15 @@ span5.onclick = function() {
     modal5.style.display = "none";
      $("#fh5co-header-section").hide();
 }
-
+*/
 // When the user clicks on <span> (x), close the modal
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+/*window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+}*/
 </script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
