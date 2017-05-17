@@ -1,13 +1,9 @@
 
-TITLE: 
-Module - 100% Fully Responsive Free HTML5 Bootstrap Template
+
 
 AUTHOR:
-DESIGNED & DEVELOPED by FREEHTML5.co
+Harshit Mahajan
 
-Website: http://freehtml5.co/
-Twitter: http://twitter.com/fh5co
-Facebook: http://facebook.com/fh5co
 
 
 CREDITS:
