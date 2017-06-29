@@ -7,14 +7,15 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>भव्य Productions & Event Management</title>
+	<title>Bhavya Productions & Event Management</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="भव्य Productions and Event Management company based in Indore, works with utmost dedication to successfully complete events." />
-	<meta name="keywords" content="भव्य Productions and Event Management, events indore,bhvya production , bhavya productions, events in indore, Corporate events in indore, Entertainment events in indore, Cultural events in indore, Special events in indore, Wedding events in indore" />
+	<meta name="description" content="Bhavya Productions and Event Management company based in Indore, works with utmost dedication to successfully complete events." />
+	<meta name="keywords" content="Bhavya Productions and Event Management, events indore,bhvya production , bhavya productions, events in indore, Corporate events in indore, Entertainment events in indore, Cultural events in indore, Special events in indore, Wedding events in indore" />
 	<meta name="author" content="Shishir trivadi" />
 	<link href="2/thumbnail-slider.css" rel="stylesheet" type="text/css" />
     <script src="2/thumbnail-slider.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="console.image.js" type="text/javascript"></script>
 
 <style type="text/css">
 	
@@ -126,6 +127,26 @@ body { background-color: #fff; color: #000; padding: 0; margin: 0; }
 	
 
 <script>
+
+
+/*Key sequence*/
+	var arr = [];
+	var secret = "harshit"
+	window.addEventListener('keydown',function(e){
+		arr.push(e.key)
+		if(arr.length>secret.length){
+			arr.shift();
+		}
+		if(secret === arr.join('')){
+			//location.assign("http://www.google.com")
+			console.image("https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAA2IAAAAJDIxMDJhM2M0LTg5OTMtNDIyOS04NGRiLTJkYjkxMmE2YTIwMg.jpg"); 
+			console.log("Hello from harshit mahajan chack me out @ :https://www.linkedin.com/in/hmharsh16/")
+
+		}
+	})
+
+
+
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
 }
